@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body >
+  <style>
+       * {
+        box-sizing: border-box;
+        max-width: 100%;
+      }
+      body, html {
+        margin: 0 ;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .container {
+        margin-right: 5%;
+      }
+    .car-container {
+        width: 90%;
+        max-width: 500px;
+        background-color: #ffffff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .car-container h2 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .car-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .car-list li {
+        background-color: #f7f7f7;
+        margin: 8px 0;
+        padding: 10px;
+        border-radius: 4px;
+        color: #555;
+        font-size: 18px;
+    }
+
+    @media (min-width: 768px) {
+        .car-container {
+            width: 60%;
+        }
+    }
+  </style>
+
+<style>
+  
+  @media  (min-width: 768px) and (max-width: 1200.98px){ 
+  .badge { 
+      display: none;
+  }
+  
+}
+.user-icon-container {
+  width: 70px; /* Set a fixed width */
+  height: 10px; /* Set a fixed height */
+  position: relative !important;
+}
+
+.badge {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -340%);
+}
+
+
+</style>
+
+<nav class="navbar navbar-expand-lg sticky-top top-0">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <div class="logo" data-aos="zoom-in">
+        <img src="../img/2024-pre.png" alt="">
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item ms-2">
+          <a class="nav-link active text-white" aria-current="page" href="account.html">ទំព័រដើម</a>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            សេវាកម្ម
+          </a>
+          <ul class="dropdown-menu ">
+            <li>
+              <a class="dropdown-item text-white nav-link" href="buy.html">ទិញ-លក់</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="rent.html">សេវាកម្មជួល</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="maintenance.html">ការថែទាំ </a></li>
+            <li><a class="dropdown-item text-white nav-link" href="assurance.html">ការធានារ៉ាប់រ៉ង</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            ប្រភេទរថយន្ត
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-white nav-link" href="carIncity.html">រថយន្តក្នុងស្រុក </a></li>
+            <li><a class="dropdown-item text-white nav-link" href="carOutcity.html">ការនាំចូល</a></li>
+          </ul>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link active text-white" aria-current="page" href="introduction.html">ការណែនាំ</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link active text-white" aria-current="page" href="aboutus.html">អំពីយើង</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link active text-white" aria-current="page" href="aboutme.html">ទំនាក់ទំនង</a>
+        </li>
+      </ul>
+      <form class="d-flex " role="search">
+        <a href="profile.html">
+          <div class="img-pro p-2 position-relative" style="width: 80px;height: 80px;">
+            <img src="../img/woman.png" alt="">
+          </div>
+          <div class="user-icon-container">
+
+            <span class="position-absolute tanslate-middle badge rounded-pill bg-danger " style="margin-top: -5%;margin-left: 3%;">
+              9+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </div>
+        </a>
+      </form> 
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2 class="bg-dark-subtle text-primary p-3 text-center rounded-3 ">
+    កក់រថយន្តដែលអ្នកស្រលាញ់ឥឡូវនេះ!
+  </h2>
+</div>
+<div class="container rounded-3 p-4 mt-5" style="background-image: url(../img/BookingDiscuss.jpg); background-repeat: no-repeat;background-size: cover; width: 100%;" >
+  <div class="row d-flex justify-content-between">
+    <div class="col-md-6 rounded-3 p-3" style="background-color: rgba(0, 0, 0, 0.334); " >
+      <h2 class="text-center mb-2 text-white fs-1 shadow">កក់រថយន្ត</h2>
+  
+      <form>
+        <!-- Personal Information -->
+        <div class="form-group">
+            <label for="name" class="text-white">ឈ្មោះពេញរបស់អ្នក</label>
+            <input type="text" class="form-control" id="name" placeholder="សូមបញ្ចូលឈ្មោះពេញ" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="contactNumber" class="text-white">លេខទូរសព្ទ័ទំនាក់ទំនង</label>
+            <input type="tel" class="form-control" id="contactNumber" placeholder="សូមបញ្ចូលលេខទូរសព្ទ័" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email" class="text-white">អាសយដ្ធាន អុីម៉ែល</label>
+            <input type="email" class="form-control" id="email" placeholder="សូមបញ្ចូលអាសយដ្ធាន អុីម៉ែល" required>
+        </div>
+        
+        <!-- Booking Details -->
+        <div class="form-group">
+            <label for="carModel" class="text-white">ប្រភេទរថយន្ត</label>
+            <select class="form-control" id="carModel" required>
+                <option>សូមជ្រើសរើស</option>
+                <option>Sedan</option>
+                <option>SUV</option>
+                <option>Convertible</option>
+                <option>Hatchback</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="pickUpDate" class="text-white">កាលបរិច្ឆេតកក់រថយន្ត</label>
+            <input type="datetime-local" class="form-control" id="pickUpDate" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="returnDate" class="text-white">កាលបរិច្ឆេតទទួលរថយន្ត</label>
+            <input type="datetime-local" class="form-control" id="returnDate" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="location" class="text-white">ទីតាំងដែលត្រូវមកទទួល</label>
+            <input type="text" class="form-control" id="location" placeholder="សូមបញ្ចូលទីតាំង" required>
+        </div>
+        
+        <!-- Additional Options -->
+        <div class="form-group">
+            <label class="text-white">សេវាកម្មបន្ថែម</label><br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gps">
+                <label class="form-check-label text-white" for="gps">GPS</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="childSeat">
+                <label class="form-check-label text-white" for="childSeat">Child Seat</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="insurance">
+                <label class="form-check-label text-white" for="insurance">ការធានារ៉ាប់រងបន្ថែម</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="specialRequests" class="text-white">សំណើររបស់លោកអ្នក</label>
+            <textarea class="form-control" id="specialRequests" rows="3" placeholder="សូមបញ្ចូលសំណើររបស់លោកអ្នក"></textarea>
+        </div>
+        
+        <!-- Payment Information -->
+        <div class="form-group">
+            <label for="paymentMethod" class="text-white">ទូទាត់វិក្កយបត្រ</label>
+            <select class="form-control" id="paymentMethod" required>
+                <option>សូមជ្រើសរើស</option>
+                <option>Credit Card</option>
+                <option>PayPal</option>
+                <option>Cash on Pick-Up</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="billingAddress" class="text-white">អាសយដ្ឋានវិក្កយបត្រ</label>
+            <input type="text" class="form-control" id="billingAddress" placeholder="សូមធ្វើការបញ្ចូល" required>
+        </div>
+        
+        <!-- Agreement and Confirmation -->
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="terms" required>
+            <label class="form-check-label text-white" for="terms">ខ្ញុំយល់ព្រមតាមលក្ខខណ្ឌ</label>
+        </div>
+
+        <a href="details.html">
+          <button type="submit" class="btn btn-primary btn-block ">
+            ដាក់បញ្ជូនការកក់</button>
+        </a>
+    </form>
+    </div>
+    <div class="col-md-6">
+    <img src="../img/BookingPage.webp" alt="" data-aos="fade-left" data-aos-duration="10">
+    </div>
+  </div>
+</div>
+  
+<section class="contact ">
+  <h1 class="p-5 text-center text-primary" style="text-shadow: 2px 2px 2px black ;">មើលបន្ថែមនៅខាងក្រោម</h1>
+  <div class="bg-dark ">
+    <div class="col-12 col-md-12">
+      <div style="width: 200px; height: 200px; margin:auto;">
+        <img src="../img/2024-pre.png" alt="">
+      </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-between mt-2 ">
+          <div class="col-lg-3 col-md-4 col-sm-4 mb-4">
+          <div class="box text-start ">
+            <h3 class="text-primary text-start ms-2">តំណរភ្ជាប់</h3>
+            <div class="main-box" style="width: 100px ;padding: 5px;">
+                <li class="list-unstyled d-block text-start mt-2 " >
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#">ចូលគណនី</a>
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#">អំពីយើង</a>
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#">អំពីសេវាកម្ម</a>
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#">ការណែនាំ</a>
+                </li>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 mb-4 ">
+            <div class="box text-start text-primary">
+              <h3>ទាញយកកម្មវិធីឥឡូវនេះ</h3>
+                  <a class="d-flex align-content-start" href="#">
+                    <div class="playstore" style="width: 200px; margin-top: 5px; ">
+                      <img src="../img/AppStore (2).png" alt="">
+                    </div>
+                  </a>
+                  <a class="d-flex align-content-start" href="#">
+                    <div class="playstore" style="width: 200px;margin-top: 17px;">
+                      <img src="../img/GooglePlayStore.png" alt="">
+                    </div>
+                  </a>
+              </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-sm-4" style="margin-top: -1%;">
+            <div class="container mx-auto ">
+              <div class="row d-flex justify-content-between gap-2">
+                <div class="col-12 col-md-6  ">
+                  <h3 class="text-start text-primary" style="margin-top: -2%;">ទីតាំង</h3>
+                  <div class="addr d-flex justify-content-start">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7186053823334!2d104.88750717481736!3d11.572018988629287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e0c9b2109%3A0x8b8d35d80b920ffc!2sANT%20Technology%20Training%20School!5e0!3m2!1sen!2skh!4v1726648340000!5m2!1sen!2skh" width="300px" height="100%" style="border:0; border-radius: 5px; margin-left: 1%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div> 
+              </div>
+            </div> 
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-4 mb-4 align-content-start ">
+            <div class="box">
+              <h3 class="text-primary">ទំនាក់ទំនង</h3>
+              <div class="main-box text-start" style="width: 270px ; padding: 5px;">
+                <li class="list-unstyled d-block text-start ">
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#"><i class="fa-solid fa-location-dot"></i> ភ្នំពេញ</a><br>
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#"><i class="fa-solid fa-phone"></i> +855 96 123 11</a><br>
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#"><i class="fa-solid fa-envelope"></i> Thekautocar@gmail.com</a>
+                  <a class="nav-link text-decoration-none text-white mt-3 fs-5" href="#">
+                    <i class="fa-brands fa-facebook "></i>
+                    <i class="fa-brands fa-telegram ms-2"></i>
+                    <i class="fa-brands fa-x-twitter ms-2"></i>
+                  </a>
+                </li>
+            </div>
+            </div>
+          </div>
+          
+         
+      </div>
+    <p class="text-center text-white p-3" style="border-top: 1px solid white;" >@រក្សាសិទ្ធគ្រប់យ៉ាងដោយ ដឹខេ អូតូខារ | The K-AutoCar</p>
+      
+
+    </div>
+    
+    </div>
+
+</section>
+
+      <script>
+        (function () {
+          'use strict';
+          var form = document.getElementById('myForm');
+    
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            else {
+              event.preventDefault();
+              window.location.href = 'account.html';
+            }
+            form.classList.add('was-validated');
+          }, false);
+        })();
+      </script>
+       <script>
+        function login(event) {
+          event.preventDefault();
+    
+          const username = document.getElementById('username').value;
+          const profileUrl = document.getElementById('profileUrl').value;
+    
+          if (username && profileUrl) {
+            sessionStorage.setItem('username', username);
+            sessionStorage.setItem('profileUrl', profileUrl);
+    
+            // Redirect to the profile page
+            window.location.href = 'profile.html';
+          } else {
+            alert('Please enter both username and profile URL.');
+          }
+        }
+    
+      </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+    </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

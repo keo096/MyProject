@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<style>
+    
+    @media  (min-width: 768px) and (max-width: 1200.98px){ 
+  .badge { 
+      display: none;
+  }
+  
+}
+.user-icon-container {
+  width: 70px; /* Set a fixed width */
+  height: 10px; /* Set a fixed height */
+  position: relative !important;
+}
+
+.badge {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -340%);
+}
+
+</style>
+  <nav class="navbar navbar-expand-lg sticky-top top-0">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="logo" data-aos="zoom-in">
+          <img src="../img/2024-pre.png" alt="">
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item ms-2">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">ទំព័រដើម</a>
+          </li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              សេវាកម្ម
+            </a>
+            <ul class="dropdown-menu ">
+              <li>
+                <a class="dropdown-item text-white nav-link" href="sell.html">ទិញ-លក់</a></li>
+              <li><a class="dropdown-item text-white nav-link" href="rent.html">សេវាកម្មជួល</a></li>
+              <li><a class="dropdown-item text-white nav-link" href="maintenance.html">ការថែទាំ </a></li>
+              <li><a class="dropdown-item text-white nav-link" href="assurance.html">ការធានារ៉ាប់រ៉ង</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              ប្រភេទរថយន្ត
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-white nav-link" href="carIncity.html">រថយន្តក្នុងស្រុក </a></li>
+              <li><a class="dropdown-item text-white nav-link" href="carOutcity.html">ការនាំចូល</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link active text-white" aria-current="page" href="introduction.html">ការណែនាំ</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link active text-white" aria-current="page" href="aboutus.html">អំពីយើង</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link active text-white" aria-current="page" href="aboutme.html">ទំនាក់ទំនង</a>
+          </li>
+        </ul>
+        <form class="d-flex " role="search">
+          <a href="profile.html">
+            <div class="img-pro p-2 position-relative" style="width: 80px;height: 80px;">
+              <img src="../img/woman.png" alt="">
+            </div>
+            <div class="user-icon-container">
+  
+              <span class="position-absolute tanslate-middle badge rounded-pill bg-danger " style="margin-top: -5%;margin-left: 3%;">
+                9+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </div>
+          </a>
+        </form> 
+      </div>
+    </div>
+  </nav>
+  
+
+    <div class="col-12 col-md-12 col-sm-12 container-fl">
+        <div class="container mx-5 p-5 text-center" id="responsive-container">
+            <h1 class="fs-1 fw-bold" id="text"></h1>
+            <script src="textWriter.js"></script>
+            <div class="col-12 col-md-12 col-sm-12">
+                <p class="fw-bold text-center fs-4 text-black" style=" text-shadow:5px 5px 5px rgb(212, 202, 202)">ធ្វើអោយក្តីស្រម៉ៃរបស់លោកអ្នកក្លាយជាការពិត ជាមួយនឹងគុណភាពល្អឥតខ្ចោះ!
+                    ផ្តល់ស្នាមញញឹមនិង ភាពជឿជាក់គ្រប់ពេលវេលាជាមួយនឹងការ ពិភាក្សា ការណែនាំអំពីការប្រើប្រាស់ចំៗចំពោះបញ្ហា។
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-sm-12">
+                    <div class="box mt-5">
+                      <h3 class="text-white bolder rounded p-4 " style="background-color: rgba(0, 0, 0, 0.511);">ចុះឈ្មោះឥឡូវដើម្បីទទួលបាន ការបញ្ចុះតម្លៃ 30% គ្រប់សេវាកម្ម!!!</h3> 
+                      <div class="d-flex justify-content-around mt-5 ">
+                        <a class="text-decoration-none" href="../page/login.html">
+                        <button class="button align-content-center ">
+                          <p class="text">ចូលរួម</p>
+                        </button>
+                      </a>
+                      <a class="text-decoration-none" href="../page/index.html">
+                        <button class="button align-content-center">
+                          <p class="text">ត្រឡប់</p>
+                        </button>
+                      </a>
+                      </div>
+                      
+                    </div>
+                </div>
+                <div class="box mt-5">
+                  <div class="row d-flex justify-content-between rounded p-1 mt-5" style="margin-top: -3%; background-color:rgba(255, 255, 255, 0.459);">
+                    <div class="col-md-3 col-3 col-sm-3 ">
+                    <img src="../img/tesla-logo.png" alt="">
+                    </div>
+                    <div class="col-md-3 col-3  col-sm-3  ">
+                    <img src="../img/bmw-logo.png" alt="">
+                    </div>
+                    <div class="col-md-3 col-3  col-sm-3 ">
+                    <img src="../img/audi-logo.png" alt="">
+                    </div>
+                    <div class="col-md-3  col-3  col-sm-3 ">
+                    <img src="../img/porsche-logo.png" alt="">
+                    </div>
+                  </div>
+    
+                  <div class="box">
+                    <div class="row d-flex justify-content-between rounded p-1" style="border-top: 1px solid black; background-color:rgba(255, 255, 255, 0.459);">
+    
+                        <div class="col-md-3  col-3  col-sm-3 ">
+                        <img src="../img/mazda-logo.png" alt="">
+                        </div>
+                        <div class="col-md-3 col-3  col-sm-3">
+                        <img src="../img/lexus-logo.png" alt="">
+                        </div>
+                        <div class="col-md-3  col-3  col-sm-3">
+                        <img src="../img/mg-logo.png" alt="">
+                        </div>
+                        <div class="col-md-3  col-3  col-sm-3">
+                          <img src="../img/mercedes-benz-logo.png" alt="">
+                          </div>
+                    
+                      
+                      </div>
+                  </div>
+                    
+                </div>
+
+                    </div>
+                  </div>
+    </div>
+    
+    <section class="details">
+      <div class="container-new p-3">
+        <div class="row d-flex justify-content-center g-2">
+          <div class="col-md-4 col-12">
+            <div class="car-type d-flex justify-content-center">
+            <h2>ស្ថានភាពរថយន្ត</h2>
+
+            <li class="list-unstyled d-block  " style="margin-top: 15%; margin-left: -40%;">
+              <div class="form-check mt-5">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault"> New</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault1">
+                <label class="form-check-label" for="flexCheckDefault"> Second hand </label>
+              </div>
+              <h5 class="mt-3">ប្រភេទរថយន្ត</h5>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault2">
+                <label class="form-check-label" for="flexCheckDefault">Toyota</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault3">
+                <label class="form-check-label" for="flexCheckDefault">Lexus</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault4">
+                <label class="form-check-label" for="flexCheckDefault">MG</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault5">
+                <label class="form-check-label" for="flexCheckDefault">Ford Raptor</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault6">
+                <label class="form-check-label" for="flexCheckDefault">Maxda</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault7">
+                <label class="form-check-label" for="flexCheckDefault">Rang Rover</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault8">
+                <label class="form-check-label" for="flexCheckDefault">BMW</label>
+              </div>
+              <h5 class="mt-3">តម្លៃរថយន្ត</h5>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault9">
+                <label class="form-check-label" for="flexCheckDefault">$8,000 - $10,000</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault10">
+                <label class="form-check-label" for="flexCheckDefault">$1,5000 - $30,000</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault11">
+                <label class="form-check-label" for="flexCheckDefault">$40,000 - $80,000</label>
+              </div>
+              <div class="form-check mt-2">
+                <input class="form-check-input" style="border: 2px solid black;" type="checkbox" value="" id="flexCheckDefault12">
+                <label class="form-check-label" for="flexCheckDefault">ក្រោម $10,0000 </label>
+              </div>
+            </li>
+            </div>
+          </div>
+        <div class="col-md-4 col-12 ">
+          <div class="box">
+            <img src="../img/PriusCar.jpg" alt="" >          
+          </div>
+          <section class="part-of-car">
+            <div class="container">
+              <div class="row ">
+                <div class="col-md-3 rounded-5 mt-2  " style="border-radius: 50%;">
+                  <img src="https://res.cloudinary.com/tbmg/c_scale,w_auto,f_auto,q_auto/v1684149523/sites/ae/articles/2023/regulars/SAE-MA-07126-2023-toyota-prius-prime-xse-premium-cabin_gallery.jpg" alt="" >
+                </div>
+                <div class="col-md-3 mt-2  ">
+                  <img src="https://cars.usnews.com/static/images/Auto/izmo/i146586704/2020_toyota_prius_prime_rearseat.jpg" alt="">
+                </div>
+                <div class="col-md-3 mt-2 ">
+                  <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2024/prius/features/new/PRS_MY23_0077_V001_wheel_UP0njwzsKwGQ8xu0thaYzjH9EZeG8YY.png?wid=1296&fmt=jpg&fit=crop&qlt=90" alt="">
+                </div>
+                <div class="col-md-3 mt-2 ">
+                  <img src="https://m.media-amazon.com/images/I/71GjXHDFctL._AC_SX466_.jpg" alt="">
+                </div>
+                
+              </div>
+              <div class="row mt-3 ">
+                <div class="col-md-3 rounded-5 mt-2 " style="border-radius: 50%;">
+                  <img src="https://res.cloudinary.com/tbmg/c_scale,w_auto,f_auto,q_auto/v1684149523/sites/ae/articles/2023/regulars/SAE-MA-07126-2023-toyota-prius-prime-xse-premium-cabin_gallery.jpg" alt="" >
+                </div>
+                <div class="col-md-3 mt-2">
+                  <img src="https://cars.usnews.com/static/images/Auto/izmo/i146586704/2020_toyota_prius_prime_rearseat.jpg" alt="">
+                </div>
+                <div class="col-md-3 mt-2">
+                  <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2024/prius/features/new/PRS_MY23_0077_V001_wheel_UP0njwzsKwGQ8xu0thaYzjH9EZeG8YY.png?wid=1296&fmt=jpg&fit=crop&qlt=90" alt="">
+                </div>
+                <div class="col-md-3 mt-2 ">
+                  <img src="https://m.media-amazon.com/images/I/71GjXHDFctL._AC_SX466_.jpg" alt="">
+                </div>
+                
+              </div>
+            </div>
+          </section>
+
+        </div>
+        <div class="col-md-4 col-12 ">
+          <div class="box text-center">
+            <h1 class="text-danger"><strong>Toyota Prius សេរីឆ្នាំ2024</strong></h1>
+            <p class="p-1 text-start text-dark" style=" line-height: 1.6">Toyota Prius Prime 2024 គឺជារថយន្ត Hybrid Plug-in ដែលរួមបញ្ចូលចំណុចសមត្ថភាពនៃការប្រើប្រាស់ថាមពលអគ្គិសនី និងប្រេងឥន្ធនៈ ដែលជួយសន្សំសំចៃប្រេងសម្រាប់អ្នកបើកបរបានយ៉ាងមានប្រសិទ្ធភាព។
+              និយាយពីលក្ខណៈសម្បត្តិចម្បងៗរបស់ Prius Prime 2024 មានដូចជា៖
+              ទម្រង់បន្ទាប់បន្សំអគ្គិសនី និងម៉ាស៊ីនបឺនសាំង៖ ប្រើម៉ាស៊ីន 2.0-liter សម្រាប់ការប្រើប្រាស់សម្រាប់ល្បឿនខ្ពស់និងការប្រើប្រាស់ក្នុងករណីសំខាន់ ខណៈម៉ូទ័រអគ្គិសនីអាចធ្វើការបើកបរតែម្ដងដោយអាគុយបានគ្រប់គ្រាន់សម្រាប់ចម្ងាយខ្លី។
+              អាគុយ Lithium-ion ការវាងប្រព័ន្ធ Plug-in Hybrid៖ មានសមត្ថភាពបើកបរដោយអាគុយប៉ុណ្ណោះបានចម្ងាយប្រមាណ 44 ម៉ាយល៍ ដោយសារតែសាកពីប្រភពអគ្គិសនីខាងក្រៅ ជាជម្រើសល្អសម្រាប់អ្នកចូលចិត្តការបើកបរទៅកាន់កន្លែងដែលអាចសាកអាគុយបាន។
+              ប្រព័ន្ធសុវត្ថិភាព Toyota Safety Sense 3.0៖ រួមបញ្ចូលប្រព័ន្ធចំណាំចរាចរណ៍ មុខងារជៀសវាងប៉ះទង្គិច និងប្រព័ន្ធរាមស្វ័យប្រវត្តិជាសក្តានុពល ជួយការពារគ្រប់ស្ថានភាពដំណើរការបើកបរ។
+              ការរចនានិងភាពប្រណីតផ្នែកក្នុង៖ មានរចនាបែបសម័យថ្មីដែលមានសុវត្ថិភាព និងមានភាពងាយស្រួលនៃបញ្ជាម៉ូនីទ័រពហុសមត្ថភាព និងគ្រប់គ្រងការបើកបរប្រកបដោយប្រសិទ្ធភាព។
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    </section>
+
+    <section >
+      <div class="d-flex justify-content-start " style="margin-left: 7%; margin-top: -5%;">
+        <button type="btn" class="btn btn-outline-secondary center" style="margin-left: 5%;" >
+          <a href="booking.html" class="text-decoration-none text-black ">កក់រថយន្តនេះ</a>
+        </button>
+        <button type="btn" class="btn btn-outline-secondary center" style="margin-left: 5%;" >
+          <a href="buy.html" class="text-decoration-none text-black ">ទិញរថយន្តនេះ</a>
+        </button>
+      </div>
+    </section>
+    <section class="contact ">
+      <h1 class="p-5 text-center text-primary" style="text-shadow: 2px 2px 2px black ;">មើលបន្ថែមនៅខាងក្រោម</h1>
+      <div class="bg-dark ">
+        <div class="col-12 col-md-12">
+          <div style="width: 200px; height: 200px; margin:auto;">
+            <img src="../img/2024-pre.png" alt="">
+          </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-between mt-2 ">
+              <div class="col-lg-3 col-md-4 col-sm-4 mb-4">
+              <div class="box text-start ">
+                <h3 class="text-primary text-start ms-2">តំណរភ្ជាប់</h3>
+                <div class="main-box" style="width: 100px ;padding: 5px;">
+                    <li class="list-unstyled d-block text-start mt-2 " >
+                      <a class="nav-link-new text-decoration-none text-white mt-4" href="#">ចូលគណនី</a>
+                      <a class="nav-link-new text-decoration-none text-white mt-4" href="#">អំពីយើង</a>
+                      <a class="nav-link-new text-decoration-none text-white mt-4" href="#">អំពីសេវាកម្ម</a>
+                      <a class="nav-link-new text-decoration-none text-white mt-4" href="#">ការណែនាំ</a>
+                    </li>
+                </div>
+              </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-4 mb-4 ">
+                <div class="box text-start text-primary">
+                  <h3>ទាញយកកម្មវិធីឥឡូវនេះ</h3>
+                      <a class="d-flex align-content-start" href="#">
+                        <div class="playstore" style="width: 200px; margin-top: 5px; ">
+                          <img src="../img/AppStore (2).png" alt="">
+                        </div>
+                      </a>
+                      <a class="d-flex align-content-start" href="#">
+                        <div class="playstore" style="width: 200px;margin-top: 17px;">
+                          <img src="../img/GooglePlayStore.png" alt="">
+                        </div>
+                      </a>
+                  </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-4 col-sm-4" style="margin-top: -1%;">
+                <div class="container mx-auto ">
+                  <div class="row d-flex justify-content-between gap-2">
+                    <div class="col-12 col-md-6  ">
+                      <h3 class="text-start text-primary" style="margin-top: -2%;">ទីតាំង</h3>
+                      <div class="addr d-flex justify-content-start">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7186053823334!2d104.88750717481736!3d11.572018988629287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e0c9b2109%3A0x8b8d35d80b920ffc!2sANT%20Technology%20Training%20School!5e0!3m2!1sen!2skh!4v1726648340000!5m2!1sen!2skh" width="300px" height="100%" style="border:0; border-radius: 5px; margin-left: 1%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                    </div> 
+                  </div>
+                </div> 
+              </div>
+  
+              <div class="col-lg-3 col-md-4 col-sm-4 mb-4 align-content-start ">
+                <div class="box">
+                  <h3 class="text-primary">ទំនាក់ទំនង</h3>
+                  <div class="main-box text-start" style="width: 270px ; padding: 5px;">
+                    <li class="list-unstyled d-block text-start ">
+                      <a class="nav-link-new text-decoration-none text-white mt-4" href="#"><i class="fa-solid fa-location-dot"></i> ភ្នំពេញ</a><br>
+                      <a class="nav-link-new text-decoration-none text-white mt-4" href="#"><i class="fa-solid fa-phone"></i> +855 96 123 11</a><br>
+                      <a class="nav-link-new text-decoration-none text-white mt-4" href="#"><i class="fa-solid fa-envelope"></i> Thekautocar@gmail.com</a>
+                      <a class="nav-link text-decoration-none text-white mt-3 fs-5" href="#">
+                        <i class="fa-brands fa-facebook "></i>
+                        <i class="fa-brands fa-telegram ms-2"></i>
+                        <i class="fa-brands fa-x-twitter ms-2"></i>
+                      </a>
+                    </li>
+                </div>
+                </div>
+              </div>
+              
+             
+          </div>
+        <p class="text-center text-white p-3" style="border-top: 1px solid white;" >@រក្សាសិទ្ធគ្រប់យ៉ាងដោយ ដឹខេ អូតូខារ | The K-AutoCar</p>
+          
+  
+        </div>
+        
+        </div>
+  
+    </section>
+      
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+   
+    <script>
+      AOS.init();
+    </script>
+    <!-- Bootstrap Bundle with Popper (for Bootstrap 5) -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script> -->
+  
+  <script>
+    AOS.init();
+  </script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

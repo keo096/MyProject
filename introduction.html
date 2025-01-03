@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ការណែនាំ</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <style>
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
+      }
+      body, html {
+        margin: 0 ;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .container {
+        margin-right: 5%;
+      }
+    .car-container {
+        width: 90%;
+        max-width: 500px;
+        background-color: #ffffff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .car-container h2 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .car-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .car-list li {
+        background-color: #f7f7f7;
+        margin: 8px 0;
+        padding: 10px;
+        border-radius: 4px;
+        color: #555;
+        font-size: 18px;
+    }
+
+    @media (min-width: 768px) {
+        .car-container {
+            width: 60%;
+        }
+    }
+  </style>
+
+  <style>
+      
+      @media  (min-width: 768px) and (max-width: 1200.98px){ 
+    .badge { 
+        display: none;
+    }
+    
+  }
+  .user-icon-container {
+    width: 70px; /* Set a fixed width */
+    height: 10px; /* Set a fixed height */
+    position: relative !important;
+  }
+
+  .badge {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -340%);
+  }
+
+  </style>
+
+<nav class="navbar navbar-expand-lg sticky-top top-0">
+
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <div class="logo" data-aos="zoom-in">
+        <img src="../img/2024-pre.png" alt="">
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link active text-white" aria-current="page" href="account.html">ទំព័រដើម</a>
+        </li>
+        <li class="nav-item dropdown ms-5">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            សេវាកម្ម
+          </a>
+          <ul class="dropdown-menu  ">
+            <li>
+              <a class="dropdown-item text-white nav-link" href="buy.html">ទិញ-លក់</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="rent.html">សេវាកម្មជួល</a></li>
+            <li><a class="dropdown-item text-white nav-link" href="maintenance.html">ការថែទាំ </a></li>
+            <li><a class="dropdown-item text-white nav-link" href="assurance.html">ការធានារ៉ាប់រ៉ង</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+        ប្រភេទរថយន្ត
+
+          </a>
+          <ul class="dropdown-menu  ">
+            <li><a class="dropdown-item text-white nav-link" href="carIncity.html">រថយន្តក្នុងស្រុក </a></li>
+            <li><a class="dropdown-item text-white nav-link" href="carOutcity.html">ការនាំចូល</a></li>
+          </ul>
+        </li>
+        <li class="nav-item ms-4  ">
+          <a class="nav-link active text-black "  aria-current="page" href="introduction.html">
+           ការណែនាំ
+          </a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-white" aria-current="page" href="aboutus.html">អំពីយើង</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-white" aria-current="page" href="aboutme.html">ទំនាក់ទំនង</a>
+        </li>
+      </ul>
+
+
+      <form class="d-flex " role="search">
+        <a href="profile.html">
+          <div class="img-pro p-2 position-relative" style="width: 80px;height: 80px;">
+            <img src="../img/woman.png" alt="">
+          </div>
+          <div class="user-icon-container">
+
+            <span class="position-absolute tanslate-middle badge rounded-pill bg-danger " style="margin-top: -5%;margin-left: 3%;">
+              9+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </div>
+        </a>
+      </form> 
+
+      
+    </div>
+  </div>
+</nav>
+
+<section class="contact center">
+  <div class="row" style="width: 1200px;">
+    <div class="box-right col-md-6 shadow" style="height: 400px;overflow: hidden;">
+      <div class="py-5">
+        <img src="../img/Introduction.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="box-left col-12 col-md-6 " >
+      <h1 class="display-5 fw-bold py-5 ms-5">ពួកយើងជាអ្នកព្រឹក្សាយ៉ាងកក់ក្តៅសម្រាប់លោកអ្នក We Here To Help!</h1>
+      <button type="button" class=" btn btn-dark ms-5 ">
+        <a href="#question" id="question" class="text-decoration-none text-danger ">ព័ត៌មានបន្ថែម?</a></button>
+      <button type="button" class=" btn  btn-outline-dark">
+        <a href="login.html" class="text-decoration-none text-danger">ចុះឈ្មោះដើម្បីក្លាយជាសមាជិក?</a>
+      </button>
+    </div>
+
+
+   
+  </div>
+</section> 
+
+
+<section >
+  <style>
+    .form-container {
+      border-top: 1px solid gray;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    width: 100%;
+    text-align: center;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #777;
+        margin-bottom: 30px;
+    }
+
+    /* Form Styling */
+    .input-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        color: #333;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #0056b3;
+        outline: none;
+    }
+
+    button {
+        padding: 12px 20px;
+        background-color: #0056b3;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #003f7d;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        .form-container {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        input, textarea, button {
+            font-size: 14px;
+        }
+    }
+  </style>
+  <h2  class="p-5 center fw-bold">បើសិនលោកអ្នកមានសំណួរអ្វីបន្ថែម សូមធ្វើការបំពេញនៅខាងក្រោម ៖</h2>
+  <div class="p-2 center">
+    <div class="form-container" >
+      <h2>យើងរីករាយយ៉ាងខ្លាំងក្នុងការទទួលឆ្លើយសំណួររបស់លោកអ្នក!</h2>
+      <p>សូមបំពេញខាងក្រោមនេះ ៖</p>
+      <form action="#" method="POST">
+          <div class="input-group">
+              <label for="name">ឈ្មោះពេញ៖</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+  
+          <div class="input-group">
+              <label for="email">អាស័យដ្ធានអុីម៉េល៖</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+  
+          <div class="input-group">
+              <label for="message">សំណួររបស់អ្នក:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+  
+          <div class="input-group">
+              <button type="submit">ដាក់ស្នើរ</button>
+          </div>
+      </form>
+  </div>
+  </div>
+   
+
+
+</section>
+
+<section>
+  <h2 class="p-5 center fw-bold">ខាងក្រោមនេះជាសំណួរដែលពួកយើងទទួលបានពីអតិថិជន ៖</h2>
+  <div class="row center gap-2">
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Ly MonySerey</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="modalContent">
+              ១.ប្រភេទ SUV ឬ MPV: ជួយផ្តល់កន្លែងកំសាន្តធំៗ និងស្រួលសម្រាប់ក្រុមគ្រួសារ និងការពិពណ៌នាផលិតផលដែលមិនធ្វើឲ្យអ្នកមានការលំបាកក្នុងការដឹកអ្នកស្មោះ។
+              ២.បណ្តោយ: ប្រសិនបើអ្នកត្រូវការប្រភេទរថយន្តដែលត្រូវជាសាធារណៈ និងសមស្របសម្រាប់ការជិះប្រចាំថ្ងៃ សូមសំរាប់ជាមួយដំណោះស្រាយដែលមានបណ្តោយប្រហែល 4.5 មែត្រ ឬលើស។
+              ៣.ការប្រែប្រួលនៃទំហំទីកន្លែង: សម្រាប់ការប្រើប្រាស់ប្រចាំថ្ងៃ, អ្នកអាចចង់បានការបញ្ចូលតំបន់ក្នុងកន្លែងកៅអីពាក់ព័ន្ធនិងបន្ថែមជំនួយក្នុងការបង្ហាញសិទ្ធិការប្រែកម្ដងៗ។
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel1">Mr. Phol Ly</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="modalContent1">
+              <b>សេវាកម្មធានាគុណភាព៖</b>
+              សេវាកម្មធានាគុណភាពរបស់យើងត្រូវផ្តល់អោយនូវការធានាតែពេញមួយរយៈពេលដែលបញ្ជាក់ក្នុងកិច្ចសន្យា។ អ្នកអាចពិនិត្យព័ត៌មាននេះជាមួយអ្នកលក់ ឬក្រុមហ៊ុនប្រើប្រាស់សេវាដែលបានបញ្ជាក់ក្នុងកិច្ចសន្យា។
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel2">Mr. Meng Tola</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="modalContent2">
+             <b>ប្រើប្រាស់ប្រេងម៉ាស៊ូត ឬប្រេងសាំង៖</b>
+              រថយន្តខ្លះប្រើប្រាស់ប្រេងម៉ាស៊ូត សម្រាប់ប្រភេទម៉ាស៊ីនមួយទាំងនេះដែលអាចមានជាអាគុយមួយឬឧបករណ៍ដែលត្រូវការប្រេងម៉ាស៊ូតនៅលើវិធីសាស្ត្រចែកចាយថាមពល។
+               ប៉ុន្តែគ្រប់ម៉ូដែលរថយន្តមិនស្មើគ្នាទាំងអស់ទេ។ អ្នកអាចពិនិត្យបានពីឯកសារបច្ចេកទេសឬក្រុមអ្នកលក់ដើម្បីទទួលបានព័ត៌មានលម្អិត។
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel3">Mr. Rey</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="modalContent3">
+            <b>Hybrid ឬរថយន្តអគ្គិសនីសម្រាប់លក់:</b>
+              មានរថយន្តប្រភេទ Hybrid និងអគ្គិសនីដែលមានសម្រាប់លក់នៅក្នុងទីផ្សារបច្ចុប្បន្ន។ ប្រភេទ Hybrid ប្រើប្រាស់ទាំងប្រេង និងថាមពលអគ្គិសនី ដើម្បីកាត់បន្ថយការបំពុលបរិស្ថាន និងថយចុះការប្រើប្រាស់ប្រេង។
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel4">Kanha Lida</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="modalContent4">
+              <b>តម្លៃសរុបរួម៖</b> តម្លៃរថយន្តអាចរួមបញ្ចូលតម្លៃផ្តើម, អាករពន្ធនាគា, អាករមុខជំនួស, អាករពាណិជ្ជកម្ម, និងតម្លៃអាករផ្សេងៗទៀតដែលស្របច្បាប់។ តម្លៃសរុបរួមនឹងអាស្រ័យលើប្រភេទរថយន្ត, តំរូវការរបស់អ្នក, និងតំបន់ដែលមានលក់រថយន្ត។
+              <b>ប្រភេទអាករ៖</b> ប្រភេទអាករផ្សេងៗដែលអាចត្រូវបានចេញជាលើរថយន្តមាន៖
+              
+              អាករជាតិ (VAT): ដែលអាចបញ្ចូលទៅក្នុងតម្លៃសរុប។
+              អាករដើមកំណត់ (Custom duties): បើរថយន្តមានការនាំចូលពីប្រទេសផ្សេងៗ។
+              អាករប្រើប្រាស់: ដើម្បីចុះឡើងទៅប្រសិនបើអ្នកប្រើប្រាស់រថយន្តក្នុងប្រទេសជាតិ។
+              តម្លៃ: តម្លៃសរុបនឹងអាស្រ័យលើប្រភេទរថយន្ត (SUV, Sedan, Hybrid, Electric) និងធម្មតានឹងត្រូវការពិនិត្យទំនាក់ទំនងជាមួយអ្នកលក់ ដើម្បីទទួលបានតម្លៃឬសេចក្តីលម្អិតអំពីអាករនិងតម្លៃសរុបរបស់រថយន្ត។
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel5">Heng Nita</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="modalContent5">
+              <b>សេវាកម្មបន្ថែម</b> (ការប្តូរប្រេងឥន្ធនៈ ឬការជួសជុលសោររថយន្ត):
+              យើងផ្តល់សេវាកម្មបន្ថែមដូចជាការប្តូរប្រេងឥន្ធនៈ ការជួសជុលសោររថយន្ត និងសេវាកម្មសំរាប់បង្កើតការផ្លាស់ប្ដូរផ្សេងៗដោយមានសេវាកម្មប្រកបដោយគុណភាព។
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!--------- -->
+
+
+    <div class="ncard mb-3 border rounded shadow p-3 " data-aos="zoom-in" style="max-width: 540px;" >
+      <div class="row g-0">
+        <div class="col-md-4 ">
+          <img src="../img/mentor-img-1.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body p-2">
+            <h5 class="card-title bold">Mr. Phol Ly</h5>
+            <p class="card-text">
+              <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" data-name="Mr. Phol Ly" data-question=" តើសេវាកម្មធានាគុណភាពរបស់អ្នកមានដល់រយៈពេលប៉ុន្មាន?" data-location="Phnom Penh" data-img="../img/mentor-img-1.jpg">
+                តើសេវាកម្មធានាគុណភាពរបស់អ្នកមានដល់រយៈពេលប៉ុន្មាន?  </a>
+             
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-geo-fill ms-5 text-danger"></i> Phnom Penh
+                
+              </small>
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="ncard mb-3 border rounded shadow p-3" data-aos="zoom-in" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4 ">
+          <img src="../img/mentor-img-5.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body p-2">
+            <h5 class="card-title bold">Mr. Meng Tola</h5>
+            <p class="card-text">
+              <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" data-name="Mr. Meng Tola" data-question="  តើរថយន្តនេះប្រើប្រាស់ប្រេងម៉ាស៊ូត ឬប្រេងសាំង?" data-location="Phnom Penh" data-img="../img/mentor-img-5.jpg">
+                តើរថយន្តនេះប្រើប្រាស់ប្រេងម៉ាស៊ូត ឬប្រេងសាំង?              </a>
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-geo-fill ms-5 text-danger"></i> Boeng Kak
+                
+              </small>
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="ncard mb-3 border rounded shadow p-3" data-aos="zoom-in" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4 ">
+          <img src="../img/mentor-img-7.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body p-2">
+            <h5 class="card-title bold">Mr. Rey</h5>
+            <p class="card-text">
+              <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" data-name="Mr. Rey" data-question="  តើមានប្រភេទ Hybrid ឬរថយន្តអគ្គិសនីសម្រាប់លក់ទេ?" data-location="Phnom Penh" data-img="../img/mentor-img-7.jpg">
+                តើមានប្រភេទ Hybrid ឬរថយន្តអគ្គិសនីសម្រាប់លក់ទេ?
+              </a>
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-geo-fill ms-5 text-danger"></i> Kampong Cham
+              </small>
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ncard mb-3 border rounded shadow p-3" data-aos="zoom-in" style="max-width: 540px;">
+      <div class="row g-0 ">
+        <div class="col-md-4 ">
+          <img src="../img/mentor-img-4.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body p-2">
+            <h5 class="card-title bold">Kanha Lida</h5>
+            <p class="card-text">
+              <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop4" data-name="Kanha Lida" data-question="តើតម្លៃសរុបរួមប្រភេទអាករផ្សេងៗហើយមានប៉ុន្មាន?" data-location="Phnom Penh" data-img="../img/mentor-img-7.jpg">
+                តើតម្លៃសរុបរួមប្រភេទអាករផ្សេងៗហើយមានប៉ុន្មាន?
+              </a>
+              
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-geo-fill ms-5 text-danger"></i> Phnom Penh
+                
+              </small>
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="ncard mb-3 border rounded shadow p-3" data-aos="zoom-in" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4 ">
+            <img src="../img/mentor-img-8.jpg" class="img-fluid rounded-start" alt="...">
+         
+        </div>
+        <div class="col-md-8">
+          <div class="card-body p-2">
+            <h5 class="card-title bold">Heng Nita</h5>
+            <p class="card-text">
+              <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop5" data-name="Heng Nita" data-question="តើអ្នកផ្តល់សេវាកម្មបន្ថែមដូចជាការប្តូរប្រេងឥន្ធនៈ ឬការជួសជុលសោររថយន្តទេ?" data-location="Phnom Penh" data-img="../img/mentor-img-8.jpg">
+                តើអ្នកផ្តល់សេវាកម្មបន្ថែមដូចជាការប្តូរប្រេងឥន្ធនៈ ឬការជួសជុលសោររថយន្តទេ?  
+              </a>
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-geo-fill ms-5 text-danger"></i> Phnom Penh
+              </small>
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ncard mb-3 border rounded shadow p-3" data-aos="zoom-in" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4 ">
+          <img src="../img/mentor-img-2.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body p-2">
+            <h5 class="card-title bold">Ly MonySerey</h5>
+            <p class="card-text">
+              <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-name="Ly MonySerey" data-question="តើរថយន្តនេះមានបណ្តោយ និងទំហំដូចម្តេចដែលអាចសមស្របសម្រាប់គ្រួសាររឺការប្រើប្រាស់ប្រចាំថ្ងៃ?" data-location="Phnom Penh" data-img="../img/mentor-img-2.jpg">
+                តើរថយន្តនេះមានបណ្តោយ និងទំហំដូចម្តេចដែលអាចសមស្របសម្រាប់គ្រួសាររឺការប្រើប្រាស់ប្រចាំថ្ងៃ?
+              </a>
+                         
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-geo-fill ms-5 text-danger"></i> Phnom Penh
+              </small>
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="center">
+    <button class="btn  btn-outline-dark">ដើម្បីមើលចម្លើយ សូមចុចលើសំណួរនីមួយៗ</button>
+  </div>
+</section>
+
+<section class="contact ">
+  <h1 class="p-5 text-center text-primary" style="text-shadow: 2px 2px 2px black ;">មើលបន្ថែមនៅខាងក្រោម</h1>
+  <div class="bg-dark ">
+    <div class="col-12 col-md-12">
+      <div style="width: 200px; height: 200px; margin:auto;">
+        <img src="../img/2024-pre.png" alt="">
+      </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-between mt-2 ">
+          <div class="col-lg-3 col-md-4 col-sm-4 mb-4">
+          <div class="box text-start ">
+            <h3 class="text-primary text-start ms-2">តំណរភ្ជាប់</h3>
+            <div class="main-box" style="width: 100px ;padding: 5px;">
+                <li class="list-unstyled d-block text-start mt-2 " >
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#">ចូលគណនី</a>
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#">អំពីយើង</a>
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#">អំពីសេវាកម្ម</a>
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#">ការណែនាំ</a>
+                </li>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 mb-4 ">
+            <div class="box text-start text-primary">
+              <h3>ទាញយកកម្មវិធីឥឡូវនេះ</h3>
+                  <a class="d-flex align-content-start" href="#">
+                    <div class="playstore" style="width: 200px; margin-top: 5px; ">
+                      <img src="../img/AppStore (2).png" alt="">
+                    </div>
+                  </a>
+                  <a class="d-flex align-content-start" href="#">
+                    <div class="playstore" style="width: 200px;margin-top: 17px;">
+                      <img src="../img/GooglePlayStore.png" alt="">
+                    </div>
+                  </a>
+              </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-sm-4" style="margin-top: -1%;">
+            <div class="container mx-auto ">
+              <div class="row d-flex justify-content-between gap-2">
+                <div class="col-12 col-md-6  ">
+                  <h3 class="text-start text-primary" style="margin-top: -2%;">ទីតាំង</h3>
+                  <div class="addr d-flex justify-content-start">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7186053823334!2d104.88750717481736!3d11.572018988629287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e0c9b2109%3A0x8b8d35d80b920ffc!2sANT%20Technology%20Training%20School!5e0!3m2!1sen!2skh!4v1726648340000!5m2!1sen!2skh" width="300px" height="100%" style="border:0; border-radius: 5px; margin-left: 1%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div> 
+              </div>
+            </div> 
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-4 mb-4 align-content-start ">
+            <div class="box">
+              <h3 class="text-primary">ទំនាក់ទំនង</h3>
+              <div class="main-box text-start" style="width: 270px ; padding: 5px;">
+                <li class="list-unstyled d-block text-start ">
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#"><i class="fa-solid fa-location-dot"></i> ភ្នំពេញ</a><br>
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#"><i class="fa-solid fa-phone"></i> +855 96 123 11</a><br>
+                  <a class="nav-link-new text-decoration-none text-white mt-4" href="#"><i class="fa-solid fa-envelope"></i> Thekautocar@gmail.com</a>
+                  <a class="nav-link text-decoration-none text-white mt-3 fs-5" href="#">
+                    <i class="fa-brands fa-facebook "></i>
+                    <i class="fa-brands fa-telegram ms-2"></i>
+                    <i class="fa-brands fa-x-twitter ms-2"></i>
+                  </a>
+                </li>
+            </div>
+            </div>
+          </div>
+          
+         
+      </div>
+    <p class="text-center text-white p-3" style="border-top: 1px solid white;" >@រក្សាសិទ្ធគ្រប់យ៉ាងដោយ ដឹខេ អូតូខារ | The K-AutoCar</p>
+      
+
+    </div>
+    
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
